@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* WCAG AAA High Contrast & Accessibility Base Overrides */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #0b132b;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ensure minimum touch targets for elderly accessibility (at least 48px by 48px, ideally 56px+) */
+.touch-target {
+  min-height: 56px;
+  min-width: 56px;
+}
+
+/* High-contrast focus indicators for screen reader and keyboard navigation */
+:focus-visible {
+  outline: 4px solid #5bc0be !important;
+  outline-offset: 4px !important;
+}
+
+/* Respect user's motion preferences for vertigo/elderly sensitivity */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

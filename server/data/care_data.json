@@ -1,0 +1,247 @@
+{
+  "profile": {
+    "id": "elderly-01",
+    "name": "Eleanor Vance",
+    "preferredName": "Grandma Eleanor",
+    "age": 78,
+    "pin": "1234",
+    "emergencyPhone": "911",
+    "caretakerName": "Sarah Vance (Daughter)",
+    "caretakerPhone": "(555) 382-9912",
+    "caretakerEmail": "sarah.vance.care@gmail.com",
+    "caretakerPasscode": "9876",
+    "bloodType": "O-Positive",
+    "allergies": [
+      "Penicillin",
+      "Sulfa drugs"
+    ],
+    "primaryCondition": "Type 2 Diabetes & Mild Hypertension",
+    "doctorName": "Dr. Robert Chen",
+    "doctorPhone": "(555) 742-1088"
+  },
+  "medications": [
+    {
+      "id": "med-01",
+      "name": "Lisinopril",
+      "genericName": "Lisinopril HCTZ",
+      "dosage": "10mg",
+      "form": "tablet",
+      "frequency": "Once daily (Morning)",
+      "timeSlots": [
+        "morning"
+      ],
+      "scheduledTimes": [
+        "08:00 AM"
+      ],
+      "instructions": "Take 1 tablet every morning with a full glass of water.",
+      "simpleGuidance": "Take this with a cool glass of water right when you wake up to keep your heart calm and steady.",
+      "purpose": "Blood Pressure Management",
+      "pillColor": "bg-rose-500 text-white",
+      "pillShape": "Round tablet with score mark",
+      "pillCount": 24,
+      "refillAt": 7,
+      "isActive": true
+    },
+    {
+      "id": "med-02",
+      "name": "Metformin",
+      "genericName": "Metformin Hydrochloride",
+      "dosage": "500mg",
+      "form": "tablet",
+      "frequency": "Twice daily (Breakfast & Dinner)",
+      "timeSlots": [
+        "morning",
+        "evening"
+      ],
+      "scheduledTimes": [
+        "08:00 AM",
+        "07:00 PM"
+      ],
+      "instructions": "Take 1 tablet with meals to minimize stomach upset.",
+      "simpleGuidance": "Take this with your morning toast and evening dinner to keep your tummy feeling happy and sugar level.",
+      "purpose": "Type 2 Diabetes Control",
+      "pillColor": "bg-emerald-500 text-white",
+      "pillShape": "Oval white coated tablet",
+      "pillCount": 46,
+      "refillAt": 10,
+      "isActive": true
+    },
+    {
+      "id": "med-03",
+      "name": "Vitamin D3",
+      "genericName": "Cholecalciferol",
+      "dosage": "1000 IU",
+      "form": "capsule",
+      "frequency": "Once daily (Lunch)",
+      "timeSlots": [
+        "afternoon"
+      ],
+      "scheduledTimes": [
+        "12:30 PM"
+      ],
+      "instructions": "Take 1 softgel capsule with lunch.",
+      "simpleGuidance": "Take this little golden pill with your lunch to keep your bones strong and sunny.",
+      "purpose": "Bone Strength & Immunity",
+      "pillColor": "bg-amber-400 text-slate-900",
+      "pillShape": "Small translucent yellow softgel",
+      "pillCount": 60,
+      "refillAt": 14,
+      "isActive": true
+    },
+    {
+      "id": "med-04",
+      "name": "Atorvastatin",
+      "genericName": "Atorvastatin Calcium",
+      "dosage": "20mg",
+      "form": "tablet",
+      "frequency": "Once daily (Bedtime)",
+      "timeSlots": [
+        "bedtime"
+      ],
+      "scheduledTimes": [
+        "08:30 PM"
+      ],
+      "instructions": "Take 1 tablet at bedtime with or without food.",
+      "simpleGuidance": "Take this before your bedtime story or warm tea to protect your blood vessels while you rest peacefully.",
+      "purpose": "Cholesterol & Heart Health",
+      "pillColor": "bg-sky-500 text-white",
+      "pillShape": "Oval film-coated tablet",
+      "pillCount": 18,
+      "refillAt": 5,
+      "isActive": true
+    }
+  ],
+  "todayDoses": [
+    {
+      "id": "dose-today-01",
+      "medicationId": "med-01",
+      "medicationName": "Lisinopril",
+      "dosage": "10mg",
+      "timeSlot": "morning",
+      "scheduledTime": "08:00 AM",
+      "status": "taken",
+      "takenAt": "08:12 AM",
+      "pillColor": "bg-rose-500 text-white",
+      "pillShape": "Round tablet with score mark",
+      "instructions": "Take with full glass of water",
+      "simpleGuidance": "Take this with a cool glass of water right when you wake up to keep your heart calm and steady.",
+      "takenMethod": "elderly_pin_pad"
+    },
+    {
+      "id": "dose-today-02",
+      "medicationId": "med-02",
+      "medicationName": "Metformin",
+      "dosage": "500mg",
+      "timeSlot": "morning",
+      "scheduledTime": "08:00 AM",
+      "status": "taken",
+      "takenAt": "08:14 AM",
+      "pillColor": "bg-emerald-500 text-white",
+      "pillShape": "Oval white coated tablet",
+      "instructions": "Take with breakfast",
+      "simpleGuidance": "Take this with your morning toast to keep your tummy feeling happy.",
+      "takenMethod": "elderly_pin_pad"
+    },
+    {
+      "id": "dose-today-03",
+      "medicationId": "med-03",
+      "medicationName": "Vitamin D3",
+      "dosage": "1000 IU",
+      "timeSlot": "afternoon",
+      "scheduledTime": "12:30 PM",
+      "status": "pending",
+      "pillColor": "bg-amber-400 text-slate-900",
+      "pillShape": "Small translucent yellow softgel",
+      "instructions": "Take with lunch",
+      "simpleGuidance": "Take this little golden pill with your lunch to keep your bones strong and sunny."
+    },
+    {
+      "id": "dose-today-04",
+      "medicationId": "med-02",
+      "medicationName": "Metformin",
+      "dosage": "500mg",
+      "timeSlot": "evening",
+      "scheduledTime": "07:00 PM",
+      "status": "pending",
+      "pillColor": "bg-emerald-500 text-white",
+      "pillShape": "Oval white coated tablet",
+      "instructions": "Take with dinner",
+      "simpleGuidance": "Take this with your warm dinner soup to keep your blood sugar steady through the night."
+    },
+    {
+      "id": "dose-today-05",
+      "medicationId": "med-04",
+      "medicationName": "Atorvastatin",
+      "dosage": "20mg",
+      "timeSlot": "bedtime",
+      "scheduledTime": "08:30 PM",
+      "status": "pending",
+      "pillColor": "bg-sky-500 text-white",
+      "pillShape": "Oval film-coated tablet",
+      "instructions": "Take before sleep",
+      "simpleGuidance": "Take this before bedtime to protect your blood vessels while you rest peacefully."
+    }
+  ],
+  "adherenceHistory": [
+    {
+      "id": "adh-01",
+      "date": "2026-11-14",
+      "time": "08:10 AM",
+      "medicationId": "med-01",
+      "medicationName": "Lisinopril",
+      "dosage": "10mg",
+      "status": "taken",
+      "loggedAt": "2026-11-14T08:10:00.000Z",
+      "method": "elderly_pin_pad"
+    },
+    {
+      "id": "adh-02",
+      "date": "2026-11-14",
+      "time": "08:10 AM",
+      "medicationId": "med-02",
+      "medicationName": "Metformin",
+      "dosage": "500mg",
+      "status": "taken",
+      "loggedAt": "2026-11-14T08:10:00.000Z",
+      "method": "elderly_pin_pad"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "appt-01",
+      "doctorName": "Dr. Robert Chen",
+      "specialty": "Cardiologist",
+      "clinicName": "St. Jude Heart & Vascular Center",
+      "date": "2026-11-18",
+      "time": "10:30 AM",
+      "location": "Suite 402, 1200 Mercy Parkway, San Jose, CA",
+      "phone": "(555) 742-1088",
+      "reason": "6-Month Hypertension & Cardiovascular Checkup",
+      "preparationList": [
+        "Bring morning blood pressure log from the past 2 weeks",
+        "Bring current pill organizer with Lisinopril and Atorvastatin",
+        "Wear short sleeves for blood pressure check",
+        "No fasting required for this visit"
+      ],
+      "status": "upcoming"
+    },
+    {
+      "id": "appt-02",
+      "doctorName": "Dr. Emily Patel",
+      "specialty": "Endocrinologist",
+      "clinicName": "Valley Metabolic Health Institute",
+      "date": "2026-11-25",
+      "time": "02:00 PM",
+      "location": "Building B, 850 Blossom Hill Rd, Los Gatos, CA",
+      "phone": "(555) 901-4432",
+      "reason": "Quarterly HbA1c Diabetes Review",
+      "preparationList": [
+        "Fast for 8 hours prior to blood draw (water is fine)",
+        "Bring home blood glucose monitor for data sync",
+        "List any symptoms of hypoglycemia or dizziness"
+      ],
+      "status": "upcoming"
+    }
+  ],
+  "lastUpdated": "2026-11-15T07:12:08.412Z"
+}
